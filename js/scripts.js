@@ -23,6 +23,27 @@ $(document).ready(function() {
 
     $("#answerField").text(number1 + " + " + number2 + " = " + add(number1, number2));
   });
+
+  $("#subtractButton").click(function(){
+    const number1 = parseInt($("#number1").val());
+    const number2 = parseInt($("#number2").val());
+
+    $("#answerField").text(number1 + " - " + number2 + " = " + subtract(number1,number2));
+  });
+
+  $("#multiplicationButton").click(function(){
+    const number1 = parseInt($("#number1").val());
+    const number2 = parseInt($("#number2").val());
+
+    $("#answerField").text(number1 + " x " + number2 + " = " + multiply(number1,number2));
+  });
+
+  $("#divisionButton").click(function(){
+    const number1 = parseInt($("#number1").val());
+    const number2 = parseInt($("#number2").val());
+
+    $("#answerField").text(number1 + " / " + number2 + " = " + divide(number1,number2));
+  });
 });
 
 
